@@ -13,6 +13,8 @@
 
   <link rel="stylesheet" href="style.css" />
 
+  <script src="Ex.js"></script>
+
   <style></style>
 
   <body>
@@ -36,22 +38,262 @@
 
     <!-- Escape seqenence  \n  \t \\  \"  \'-->
     <script>
-     // window.alert("\"hello \t wor\"ld \n javas\\cript");
+      // window.alert("\"hello \t wor\"ld \n javas\\cript");
     </script>
 
     <!-- Prompt -->
     <script>
-        var name;
-        name = window.prompt("Please Enter your name:");
-        document.write("hello " + name);
+      //var name;
+      // name = window.prompt("Please Enter your name:");
+      // document.write("hello " + name);
     </script>
 
+    <!-- Addition Calculation -->
     <script>
-        var fisrtNum;
-        var secondNum
-        var num1;
-        var num2;
+      var fisrtNum; // input string
+      var secondNum; // input string
+      var num1;
+      var num2;
+      var sum;
+
+      // read String from user
+      //fisrtNum = window.prompt("Enter first number:");
+      //secondNum = window.prompt("Enter second number:");
+
+      //convert to int
+      num1 = parseInt(fisrtNum);
+      num2 = parseInt(secondNum);
+
+      sum = num1 + num2;
+
+      document.write("<h2> the result is " + sum + "</h2>");
     </script>
+
+    <!--  + - * / % -->
+
+    <!-- Using Relational opraterts -->
+
+    <script>
+      var name;
+      var now = new Date();
+      var hour = now.getHours();
+
+      //name = window.prompt("Please enter your name: ");
+
+      if (hour < 12) {
+        document.write("<h1> Good Morning .");
+      }
+
+      if (hour >= 12) {
+        hour = hour - 12;
+
+        if (hour < 6) {
+          document.write("<h1> Good afternoon, ");
+        }
+        if (hour >= 6) {
+          document.write("<h1> Good morning , ");
+        }
+      }
+
+      document.writeln(name + ", Welcome to javascript programming </h1>");
+    </script>
+
+    <!--  -->
+    <form>
+      1st Number: <input type="text" id="firstnumber" /> <br />
+      <br />
+      2nd number: <input type="text" id="secondnumber" /> <br />
+      <br />
+      <input type="button" onclick="multiplyBy()" value="Multiply" />
+
+      <input type="button" onclick="divideBy()" value="Divde" />
+    </form>
+
+    <p>the result is : <span id="result"></span></p>
+
+    <!-- <script>
+      const baseValue = window.prompt("Enter the base of a triangle: ");
+      const heightValue = window.prompt("Enter the height of a triangle: ");
+
+      // calculate the area
+      const areaValue = (parseInt(baseValue) * parseInt(heightValue)) / 2;
+
+      //document.getElementById("base").innerHTML = areaValue;
+      document.write("<h2> base and heightValue</h2>");
+      document.write("<p> the result is: " + areaValue + "</p>");
+    </script> -->
+
+    <!-- <script>
+      const side1 = parseInt(window.prompt("Enter side1: "));
+      const side2 = parseInt(window.prompt("Enter side2: "));
+      const side3 = parseInt(window.prompt("Enter side3: "));
+
+      // calculate the semi-perimeter
+      const s = (side1 + side2 + side3) / 2;
+
+      //calculate the area
+      const areaVlue = Math.sqrt(s * (s - side1) * (s - side2) * (s - side3));
+
+      document.write(`The area of the triangle is ` + areaVlue);
+    </script> -->
+
+    <h2>Welcome to the JavaTpoint.com</h2>
+    <h3>Example of the removeAttribute() Method</h3>
+
+    <div
+      id="div11"
+      style="border: 2px solid red; color: red; background-color: yellow"
+    >
+      This is the first div element
+    </div>
+    <br />
+    <div
+      id="div22"
+      style="border: 2px solid blue; color: blue; background-color: skyblue"
+    >
+      This is the second element
+    </div>
+    <br>
+    <button onclick="fun()">click me</button>
+   
+
+    <h2>JavaScript Strings</h2>
+    <h3>The lenght Property</h3>
+    <p>The length property returns the length of a string</p>
+    <p>Find the length of "hello world"</p>
+    <p id="demo"></p>
+
+    <script>
+        var text = "hello world"
+        var size = text.length;
+
+        document.getElementById("demo").innerHTML = size;
+    </script>
+
+
+    <h2>JavaScript String</h2>
+    <h3>The localeCompare() Method</h3>
+
+    <p>localeCompare returns one of 3 numbers indicating the sort order.
+        <ul>
+            <li>-1 if sorted</li>
+            <li>1 if sorted after</li>
+            <li>-1 if equal</li>
+        </ul>
+        <br>
+        Compare "cd" with "ab"
+        <br>
+        <span id="compare"></span>
+    </p>
+
+
+    <script>
+        var text1 = "cd"
+        var text2 = "ab"
+        var result = text1.localeCompare(text2);
+
+        document.getElementById("compare").innerHTML = result;
+
+
+    </script>
+
+    <h2>JavaScripts Strings </h2>
+    <h3>the toLocaleLowercase() Method</h3>
+    <p>toLocaleLowercase() converts a string to lowercase letters,(Hello World)
+        using current locale:
+        <br>
+        <span id="lowerCase"></span>
+    </p>
+
+    <script>
+        var text = "Hello World"
+        var result = text.toLocaleLowerCase();
+        document.getElementById("lowerCase").innerHTML = result;
+    </script>
+
+    <h2>JavaScripts Strings </h2>
+    <h3>the toLocaleUppercase() Method</h3>
+    <p>toLocaleUppercase() converts a string to Upper letters,(Hello World)
+        using current locale:
+        <br>
+        <span id="upperCase"></span>
+    </p>
+
+    <script>
+        var text = "Hello World"
+        var result = text.toLocaleUpperCase();
+        document.getElementById("upperCase").innerHTML = result;
+    </script>
+
+
+    <!-- reverse text(dosent work) -->
+    <h2>Reversed Text</h2>
+<form>
+    enter Text:<input type="text" id="string">
+<br>
+    <button onclick="reverseString()">reverse</button>
+
+</form>
+
+<br>
+<p>
+    <span id="reversed"></span>
+    </p>
+    <script>
+        function reverseString(){
+            var str11 = document.getElementById("string").value;
+            var NewString = "";
+            for(var i = str.length - 1;i >= 0; i--){
+              return NewString +=str[i]; 
+            }
+            
+        }
+
+        document.getElementById("reversed").innerHTML= NewString;
+    </script>
+
+
+    <!-- Reversed Sentence(dosen't work) -->
+
+    <h2>Reversed Sentence</h2>
+    <form>
+        Enter Text: <input type="text" id="revIN">
+        <br>
+        <button onclick="reverseInPlace()">Reverse</button>
+    </form>
+    <p>
+        <span id="revINResult"></span>
+    </p>
+    
+    <script>
+        function reverseInPlace() {
+            var str22 = document.getElementById("revIN").value;
+            var words = str22.split(/\s+/); // Use regular expression \s+ to split by whitespace
+            var revrus = "";
+    
+            for (var i = 0; i < words.length; i++) {
+                revrus += words[i].split('').reverse().join('');
+    
+                // Add a space between reversed words (except for the last word)
+                if (i < words.length - 1) {
+                    revrus += ' ';
+                }
+            }
+    
+            // Set the result inside the function
+            document.getElementById("revINResult").innerHTML = revrus;
+        }
+    </script>
+
+
+    
+    
+
+
+
+
+
+
     
 
 
