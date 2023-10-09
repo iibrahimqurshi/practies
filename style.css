@@ -1,0 +1,391 @@
+
+
+/*
+ .example > Class 
+#example > ID
+
+
+*/
+
+
+
+
+
+
+
+h1 {
+    color: red;
+    text-align: center;
+}
+
+
+.container {
+    display: flex;
+    /* Use flexbox to create a row layout */
+    align-items: center;
+    /* Vertically center content */
+}
+
+
+
+.list {
+    flex: 1;
+    /* Make the list take up available space */
+    padding: 0;
+    /* Remove default padding on the ul */
+    list-style: none;
+    /* Remove bullet points from list items */
+    margin-right: 20px;
+    /* Add some spacing between the list and image */
+}
+
+.image {
+    max-width: 100%;
+    /* Ensure the image doesn't exceed its container */
+    text-align: end;
+}
+
+table {
+    border: 1px solid black;
+    border-collapse: collapse;
+    align-content: center;
+    width: 90%;
+    margin-left: 20px;
+}
+
+th,
+td {
+    border: 1px solid black;
+    border-collapse: collapse;
+    align-content: center;
+
+}
+
+
+.spacer {
+    width: 20px;
+    height: 35px;
+}
+
+
+
+
+/* Div Styles*/
+
+.div1 {
+    width: 300px;
+    background-color: yellow;
+    height: 150px;
+    text-align: center;
+    margin: 20px;
+    padding: 20px;
+
+}
+
+.div2 {
+    width: 300px;
+    background-color: blue;
+    height: 150px;
+    text-align: center;
+    margin: 20px;
+    padding: 20px
+}
+
+.div3 {
+    width: 300px;
+    background-color: orange;
+    height: 150px;
+    text-align: center;
+    padding: 20px;
+    margin: 20px;
+}
+
+/* span Example*/
+
+.norm {
+    color: red;
+}
+
+.big {
+    color: blue;
+    font-weight: bold;
+
+}
+
+.italicText {
+    color: green;
+    font-style: italic;
+}
+
+#row1 {
+    padding: 10px;
+    border: solid 1px #000;
+}
+
+
+
+.li2 {
+    display: grid;
+    border: solid 1px black;
+    border-radius: 8px;
+    padding: 6px;
+    margin: 5px;
+
+}
+
+.div4 {
+    width: 100%;
+    text-align: center;
+
+}
+
+/*Positioing Elements */
+
+.bgimg {
+    position: relative;
+    top: 10px;
+    left: 100px;
+    z-index: 1;
+}
+
+.fgimg {
+    position: relative;
+    left: 200px;
+    top: -150px;
+    z-index: 2;
+}
+
+
+.bgimgAbs {
+    position: absolute;
+    top: 10px;
+    left: 400px;
+    z-index: 1;
+}
+
+.fgimgAbs {
+    position: absolute;
+    left: 500px;
+    top: 50px;
+    z-index: 2;
+}
+
+.textAbs {
+    position: absolute;
+    left: 550px;
+    top: 50px;
+    z-index: 3;
+}
+
+
+.background {
+    width: 100%;
+    background-image: url("camel.jpg");
+    height: 150px;
+    text-align: center;
+    padding: 20px;
+    background-repeat: repeat-x;
+    background-attachment: scroll;
+}
+
+
+
+
+/*Border styles */
+
+
+.medium {
+    border-width: medium;
+}
+
+
+.thin {
+    border-width: thin;
+
+}
+
+
+.solid {
+    border-style: solid;
+}
+
+
+.double {
+    border-style: double;
+}
+
+.groove {
+    border-style: groove;
+}
+
+.inset {
+    border-style: inset;
+}
+
+.outset {
+    border-style: outset;
+}
+
+
+.dashed {
+    border-style: dashed;
+}
+
+
+.Red {
+    border-color: red;
+}
+
+.blue {
+    border-color: blue;
+}
+
+
+
+.headerEx {
+    background-color: skyblue;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: .2em;
+}
+
+.p1 {
+    text-align: justify;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+
+}
+
+.floated {
+    background-color: lightgrey;
+    font-size: 1.5em;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: .2em;
+    margin-left: .5em;
+    margin-bottom: .5em;
+    float: right;
+    text-align: center;
+    width: 50%;
+}
+
+section {
+    border: 1px solid skyblue;
+}
+
+
+/*Transnion and transfrom */
+
+.img1 {
+    margin: 80;
+    -webkit-transition: -webkit-transform 4s;
+    -moz-transition: moz-transform 4s;
+    -o-transition: -o-transform 4s;
+    transition: transform 4s;
+}
+
+.img1:hover {
+    -webkit-transform: rotate(360deg) scale(2, 2);
+    -moz-transform: rotate(360deg) scale(2, 2);
+    -o-transform: rotate(360deg) scale(2, 2);
+    transform: rotate(360deg) scale(2, 2);
+}
+
+
+
+nav {
+    font-weight: bold;
+    border: 1px solid royalblue;
+    width: 10em;
+    color: white;
+    background-color: royalblue;
+    text-align: center;
+
+
+}
+
+nav ul {
+    display: none;
+    list-style: none;
+    margin: 0px;
+    padding: 0px;
+}
+
+nav:hover ul {
+    display: block;
+}
+
+nav ul li {
+    border-top: 2px solid royalblue;
+    color: black;
+    background-color: white;
+    width: 10em;
+}
+
+nav ul li:hover {
+    background-color: powderblue;
+    text-decoration: none;
+}
+
+
+/* .descendent {
+    border: 3px solid lime;
+
+} */
+
+
+/* .descendent p {
+    color: skyblue;
+
+} */
+
+
+.descendent > p {
+    color: red;
+
+}
+
+/* Universal Selector */
+/* *{
+    margin: 20px;
+} */
+
+.even-columns{
+    display:flex;
+ }
+
+.even-columns > *{
+   flex:1;
+   margin: 20px;
+}
+
+
+/* .desDiv > div{
+margin: 20px;
+
+} */
+
+
+/*====================  */
+/* Pesudo classes */
+/*==================== 
+:first-child
+:nth-child
+:nth-of-type()
+:not()
+:hover
+:focus
+ */
+ /* .ulhover:hover{
+    color: red;
+
+ } */
+
+ /* li:first-child{
+    color:red
+
+ } */
+
+ 
+ li:nth-child(2){
+    color:red
+
+ }

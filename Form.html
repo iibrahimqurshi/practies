@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Example</title>
+</head>
+
+<style>
+    .page{
+        padding: 20px;
+        border: 1px solid black;
+    }
+
+    button{
+        border-radius: 8px;
+        background-color: black;
+        padding: 5px;
+    }
+    button:hover{
+        background-color: aqua;
+        color: black;
+    }
+</style>
+
+<body class="page">
+    <button> <a style="color: white;" href="index.html"> Back </a></button>
+
+    <h1>Feedback Form</h1>
+
+    <form method="post" action="http://www.deitel.com">
+        <input type="hidden" name="recipient" value="deitel@deitel.com">
+        <input type="hidden" name="subject" value="Feedback Form">
+        <input type="hidden" name="redirect" value="Main.html">
+
+
+        <p>
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" size="25" required>
+        </p>
+
+        <p>
+            <label for="comments"> Comments: <Br>
+                <textarea name="comments" id="comments" cols="36" rows="4"> Enter Comments Here</textarea>
+            </label>
+
+        </p>
+
+        <p>
+            <label for="Email">Email Address:
+                <input type="password" name="Email" id="Email">
+            </label>
+        </p>
+
+        <p>
+            <label> <strong>things you liked</strong></label>
+        </p>
+
+        <p>
+            <label> Site Desgin
+                <input type="checkbox" name="thingsliked" value="Design">
+            </label>
+
+            <label> Links
+                <input type="checkbox" name="thingsliked" value="Limks">
+            </label>
+
+            <label> Ease of use
+                <input type="checkbox" name="thingsliked" value="Ease">
+            </label>
+
+            <label> Images
+                <input type="checkbox" name="thingsliked" value="Images">
+            </label>
+            <label> Source code
+                <input type="checkbox" name="thingsliked" value="Code">
+            </label>
+        </p>
+
+        <p>
+            <label> <strong>How did you get to our site?:</strong></label>
+        </p>
+
+        <p>
+
+            <label>Search Engine
+                <input type="radio" name="getSite" value="Engine">
+            </label>
+            <label>Links from another sites
+                <input type="radio" name="getSite" value="ExternalLinks">
+            </label>
+            <label>Deitel.com website
+                <input type="radio" name="getSite" value="Deitel">
+            </label>
+            <label>refreence from book
+                <input type="radio" name="getSite" value="book">
+            </label>
+            <label>Other
+                <input type="radio" name="getSite" value="Other">
+            </label>
+        </p>
+
+
+
+
+        <p>
+            <label for="rate-select"> <strong>rate our website:</strong>
+                <select name="rates" id="rate-select">
+                    <option value="Amazing">Amazing</option>
+                    <option value="10">10</option>
+                    <option value="9">9</option>
+                    <option value="8">8</option>
+                    <option value="7">7</option>
+                    <option value="6">6</option>
+                    <option value="5">5</option>
+                    <option value="4">4</option>
+                    <option value="3">3</option>
+                    <option value="2">2</option>
+                    <option value="1">1</option>
+                    <option value="Awful">Awful</option>
+                </select>
+            </label>
+        </p>
+
+        <p>
+            <label for="picture">Upload a picture:</label>
+            <br><input type="file" accept="image/png, image/jpeg" name="picture">
+        </p>
+
+        <input type="submit" value="Submit">
+
+
+
+
+
+
+
+
+
+
+
+
+    </form>
+
+
+
+</body>
+
+</html>
